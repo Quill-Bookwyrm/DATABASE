@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7C31F4C-B483-4704-AF7D-338D035755D6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ParseFromCSV</RootNamespace>
+    <AssemblyName>ParseFromCSV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azure.Core, Version=1.38.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Azure.Core.1.38.0\lib\net472\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity, Version=1.11.4.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Azure.Identity.1.11.4\lib\netstandard2.0\Azure.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net462\Microsoft.Bcl.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient, Version=6.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Data.SqlClient.6.0.1\lib\net462\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net462\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client, Version=4.61.3.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Identity.Client.4.61.3\lib\net462\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal, Version=4.61.3.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.Identity.Client.Extensions.Msal.4.61.3\lib\netstandard2.0\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.IdentityModel.Abstractions.7.5.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.IdentityModel.JsonWebTokens.7.5.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.IdentityModel.Logging.7.5.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.IdentityModel.Protocols.7.5.0\lib\net472\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.7.5.0\lib\net472\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ClientModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.ClientModel.1.0.0\lib\netstandard2.0\System.ClientModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.IdentityModel.Tokens.Jwt.7.5.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.IO.FileSystem.AccessControl.5.0.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data, Version=1.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Memory.Data.1.0.2\lib\net461\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Security.Cryptography.Pkcs.8.0.1\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Security.Cryptography.ProtectedData.4.7.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Text.Json.6.0.10\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\CerealDatabase\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Connection.cs" />
+    <Compile Include="Services\CSV_Parser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\Cereal.csv" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\CerealPictures\100%25Bran.jpg" />
+    <Content Include="Data\CerealPictures\100%25NaturalBran.jpg" />
+    <Content Include="Data\CerealPictures\All-Bran with Extra Fiber.jpg" />
+    <Content Include="Data\CerealPictures\All-Bran.jpg" />
+    <Content Include="Data\CerealPictures\Almond Delight.jpg" />
+    <Content Include="Data\CerealPictures\Apple Cinnamon Cheerios.png" />
+    <Content Include="Data\CerealPictures\Apple Jacks.jpg" />
+    <Content Include="Data\CerealPictures\Basic 4.jpg" />
+    <Content Include="Data\CerealPictures\Bran Chex.jpg" />
+    <Content Include="Data\CerealPictures\Bran Flakes.jpg" />
+    <Content Include="Data\CerealPictures\Cap%27n%27Crunch.jpg" />
+    <Content Include="Data\CerealPictures\Cheerios.jpg" />
+    <Content Include="Data\CerealPictures\Cinnamon Toast Crunch.jpg" />
+    <Content Include="Data\CerealPictures\Clusters.jpg" />
+    <Content Include="Data\CerealPictures\Cocoa Puffs.jpg" />
+    <Content Include="Data\CerealPictures\Corn Chex.jpg" />
+    <Content Include="Data\CerealPictures\Corn Flakes.jpg" />
+    <Content Include="Data\CerealPictures\Corn Pops.jpg" />
+    <Content Include="Data\CerealPictures\Count Chocula.jpg" />
+    <Content Include="Data\CerealPictures\Cracklin%27 Oat Bran.jpg" />
+    <Content Include="Data\CerealPictures\Cream of Wheat %28Quick%29.png" />
+    <Content Include="Data\CerealPictures\Crispix.jpg" />
+    <Content Include="Data\CerealPictures\Crispy Wheat &amp; Raisins.jpg" />
+    <Content Include="Data\CerealPictures\Double Chex.jpg" />
+    <Content Include="Data\CerealPictures\Froot Loops.jpg" />
+    <Content Include="Data\CerealPictures\Frosted Flakes.png" />
+    <Content Include="Data\CerealPictures\Frosted Mini-Wheats.jpg" />
+    <Content Include="Data\CerealPictures\Fruit &amp; Fibre Dates, Walnuts, and Oats.jpg" />
+    <Content Include="Data\CerealPictures\Fruitful Bran.jpg" />
+    <Content Include="Data\CerealPictures\Fruity Pebbles.jpg" />
+    <Content Include="Data\CerealPictures\Golden Crisp.jpg" />
+    <Content Include="Data\CerealPictures\Golden Grahams.jpg" />
+    <Content Include="Data\CerealPictures\Grape Nuts Flakes.jpg" />
+    <Content Include="Data\CerealPictures\Grape-Nuts.jpg" />
+    <Content Include="Data\CerealPictures\Great Grains Pecan.jpg" />
+    <Content Include="Data\CerealPictures\Honey Graham Ohs.jpg" />
+    <Content Include="Data\CerealPictures\Honey nut Cheerios.jpg" />
+    <Content Include="Data\CerealPictures\Honey-comb.jpg" />
+    <Content Include="Data\CerealPictures\Just Right Crunchy Nuggets.jpg" />
+    <Content Include="Data\CerealPictures\Just Right Fruit &amp; Nut.jpg" />
+    <Content Include="Data\CerealPictures\Kix.jpg" />
+    <Content Include="Data\CerealPictures\Life.jpg" />
+    <Content Include="Data\CerealPictures\Lucky Charms.jpg" />
+    <Content Include="Data\CerealPictures\Maypo.jpg" />
+    <Content Include="Data\CerealPictures\Muesli Raisins, Dates, &amp; Almons.jpg" />
+    <Content Include="Data\CerealPictures\Muesli Raisins, Peaches, &amp; Pecans.jpg" />
+    <Content Include="Data\CerealPictures\Mueslix Crispy Blend.jpg" />
+    <Content Include="Data\CerealPictures\Multi-Grain Cheerios.jpg" />
+    <Content Include="Data\CerealPictures\Nut&amp;Honey Crunch.jpg" />
+    <Content Include="Data\CerealPictures\Nutri-Grain Almond-Raisin.jpg" />
+    <Content Include="Data\CerealPictures\Nutri-Grain Wheat.jpg" />
+    <Content Include="Data\CerealPictures\Oatmeal Raisin Crisp.jpg" />
+    <Content Include="Data\CerealPictures\Post Nat, Raisin Bran.jpg" />
+    <Content Include="Data\CerealPictures\Product 19.jpg" />
+    <Content Include="Data\CerealPictures\Puffed Rice.jpg" />
+    <Content Include="Data\CerealPictures\Puffed Wheat.jpg" />
+    <Content Include="Data\CerealPictures\Quaker Oat Squares.jpg" />
+    <Content Include="Data\CerealPictures\Quaker Oatmeal.jpg" />
+    <Content Include="Data\CerealPictures\Raisin Bran.jpg" />
+    <Content Include="Data\CerealPictures\Raisin Nut Bran.jpg" />
+    <Content Include="Data\CerealPictures\Raisin Squares.jpg" />
+    <Content Include="Data\CerealPictures\Rice Chex.jpg" />
+    <Content Include="Data\CerealPictures\Rice Krispies.jpg" />
+    <Content Include="Data\CerealPictures\Shredded Wheat spoon size.jpg" />
+    <Content Include="Data\CerealPictures\Shredded Wheat%27n%27Bran.jpg" />
+    <Content Include="Data\CerealPictures\Shredded Wheat.jpg" />
+    <Content Include="Data\CerealPictures\Smacks.jpg" />
+    <Content Include="Data\CerealPictures\Special K.jpg" />
+    <Content Include="Data\CerealPictures\Strawberry Fruit Wheats.jpg" />
+    <Content Include="Data\CerealPictures\Total Corn Flakes.jpg" />
+    <Content Include="Data\CerealPictures\Total Raisin Bran.jpg" />
+    <Content Include="Data\CerealPictures\Total Whole Grain.jpg" />
+    <Content Include="Data\CerealPictures\Triples.jpg" />
+    <Content Include="Data\CerealPictures\Trix.jpg" />
+    <Content Include="Data\CerealPictures\Wheat Chex.jpg" />
+    <Content Include="Data\CerealPictures\Wheaties Honey Gold.jpg" />
+    <Content Include="Data\CerealPictures\Wheaties.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\CerealDatabase\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\CerealDatabase\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\CerealDatabase\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\CerealDatabase\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+  </Target>
+</Project>
