@@ -1,3 +1,5 @@
 *.vsidx
 CerealDatabase/CerealDatabase.mdf
 *.mdf
+CerealDatabase/CerealDatabase.mdf
+CerealDatabase/CerealDatabase_log.ldf
