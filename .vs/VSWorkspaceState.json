@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ParseFromCSV",
+    "\\ParseFromCSV\\Models",
+    "\\ParseFromCSV\\Services"
+  ],
+  "SelectedNode": "\\ParseFromCSV\\Services\\CSV_Parser.cs",
+  "PreviewInSolutionExplorer": false
+}

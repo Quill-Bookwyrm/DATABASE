@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CB2F7EB-783E-4595-97E4-C8A6D9482D54}|CerealDatabase.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealdatabase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7CB2F7EB-783E-4595-97E4-C8A6D9482D54}|CerealDatabase.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\services\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\pages\\cereals\\getallcereals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\pages\\cereals\\getallcereals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\services\\interfaces\\icerealservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C31F4C-B483-4704-AF7D-338D035755D6}|..\\ParseFromCSV\\ParseFromCSV.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\parsefromcsv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\models\\cereal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C31F4C-B483-4704-AF7D-338D035755D6}|..\\ParseFromCSV\\ParseFromCSV.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\parsefromcsv\\services\\csv_parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\services\\cerealservice\\cerealservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_SPAC_50_DESKTOP_PROJEKTER_CEREALAPI_DATABASE_CEREALDATABASE_CEREALDATABASE.MDF/True/SqlTable/dbo.Cereals.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEDC610-44D5-4E0C-9F1D-DAF62C70BF7C}|..\\CerealREST\\CerealREST.csproj|c:\\users\\spac-50\\desktop\\projekter\\cerealapi\\database\\cerealrest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +46,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealDatabase\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealDatabase\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "GetAllCereals.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml.cs*",
+              "RelativeToolTip": "..\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T09:36:16.855Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-14T12:27:05.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllCereals.cshtml",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml*",
+              "RelativeToolTip": "..\\CerealREST\\Pages\\Cereals\\GetAllCereals.cshtml*",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwIQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T12:19:40.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\ParseFromCSV\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ParseFromCSV\\Program.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\ParseFromCSV\\Program.cs",
+              "RelativeToolTip": "..\\ParseFromCSV\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T12:07:19.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "..\\CerealREST\\Pages\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T12:02:50.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "..\\CerealREST\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T12:02:22.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Pages\\Index.cshtml",
+              "RelativeToolTip": "..\\CerealREST\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T12:02:14.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Cereals [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_SPAC_50_DESKTOP_PROJEKTER_CEREALAPI_DATABASE_CEREALDATABASE_CEREALDATABASE.MDF/True/SqlTable/dbo.Cereals.sql",
+              "ToolTip": "dbo.Cereals [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-14T11:46:43.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CSV_Parser.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\ParseFromCSV\\Services\\CSV_Parser.cs",
+              "RelativeDocumentMoniker": "..\\ParseFromCSV\\Services\\CSV_Parser.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\ParseFromCSV\\Services\\CSV_Parser.cs",
+              "RelativeToolTip": "..\\ParseFromCSV\\Services\\CSV_Parser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T10:04:19.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CerealService.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Services\\CerealService\\CerealService.cs",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Services\\CerealService\\CerealService.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Services\\CerealService\\CerealService.cs",
+              "RelativeToolTip": "..\\CerealREST\\Services\\CerealService\\CerealService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwJMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T10:03:02.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cereal.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Models\\Cereal.cs",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Models\\Cereal.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Models\\Cereal.cs",
+              "RelativeToolTip": "..\\CerealREST\\Models\\Cereal.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T08:28:39.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Services\\Connection.cs",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Services\\Connection.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Services\\Connection.cs",
+              "RelativeToolTip": "..\\CerealREST\\Services\\Connection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T10:00:51.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICerealService.cs",
+              "DocumentMoniker": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Services\\Interfaces\\ICerealService.cs",
+              "RelativeDocumentMoniker": "..\\CerealREST\\Services\\Interfaces\\ICerealService.cs",
+              "ToolTip": "C:\\Users\\spac-50\\Desktop\\Projekter\\CerealAPI\\DATABASE\\CerealREST\\Services\\Interfaces\\ICerealService.cs*",
+              "RelativeToolTip": "..\\CerealREST\\Services\\Interfaces\\ICerealService.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwBQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T08:41:19.335Z",
+              "EditorCaption": ""
             }
           ]
         }

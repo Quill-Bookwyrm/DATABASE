@@ -13,31 +13,12 @@ namespace ParseFromCSV
     {
         static void Main(string[] args)
         {
-            //string filepath = @"c:\users\spac-50\desktop\projekter\cerealapi\database\parsefromcsv\data\cereal.csv";
-            //{
-            //    try
-            //    {
-            //        using (streamreader reader = new streamreader(filepath))
+            //CSV_Parser parser = new CSV_Parser();
+            //List<Cereal> list = new List<Cereal>(parser.CreateCerealListFromCsv());
+            //Console.WriteLine($"{parser.InsertCerealListSql(list)} rows affected");
+            //parser.ReadAndDisplayCSV();
 
-            //        {
-            //            string line;
-            //            while ((line = reader.readline()) != null)
-            //            {
-            //                console.writeline(line);
-            //            }
-            //        }
-            //    }
-            //    catch (exception ex)
-            //    {
-            //        console.writeline(ex.message);
-            //    }
-            //    console.readkey();
-            //}
 
-            CSV_Parser parser = new CSV_Parser();
-
-            int x = parser.insertSqlFromCSV();
-            Console.WriteLine($"{x} rows affected!");
         }
     }
 }

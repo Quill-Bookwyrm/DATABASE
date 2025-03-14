@@ -1,0 +1,134 @@
+﻿@page
+@model CerealREST.Pages.Cereals.GetAllCerealsModel
+@{
+    ViewData["Title"] = "GetAllCereals";
+}
+
+<p>
+    <a asp-page="/Cereals/CreateCereal">Create New Cereal</a>
+</p>
+<form>
+    <p>
+
+    </p>
+</form>
+
+<h4 style="color:darkcyan">List of Cereals</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Cereal ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Manufacturer
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Calories
+            </th>
+            <th>
+                Protein
+            </th>
+            <th>
+                Fat
+            </th>
+            <th>
+                Sodium
+            </th>
+            <th>
+                Fiber
+            </th>
+            <th>
+                Carbohydrates
+            </th>
+            <th>
+                Sugars
+            </th>
+            <th>
+                Potassium
+            </th>
+            <th>
+                Vitamins
+            </th>
+            <th>
+                Shelf
+            </th>
+            <th>
+                Weight
+            </th>
+            <th>
+                Cups
+            </th>
+            <th>
+                Rating
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Cereals.Count() != 0)
+        {
+            @foreach (var item in Model.Cereals)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Category
+                    </td>
+                    <td>
+                        @item.Type
+                    </td>
+                    <td>
+                        @item.Calories
+                    </td>
+                    <td>
+                        @item.Protein
+                    </td>
+                    <td>
+                        @item.Fat
+                    </td>
+                    <td>
+                        @item.Sodium
+                    </td>
+                    <td>
+                        @item.Fiber
+                    </td>
+                    <td>
+                        @item.Carbohydrates
+                    </td>
+                    <td>
+                        @item.Sugars
+                    </td>
+                    <td>
+                        @item.Potassium
+                    </td>
+                    <td>
+                        @item.Vitamins
+                    </td>
+                    <td>
+                        @item.Shelf
+                    </td>
+                    <td>
+                        @item.Weight
+                    </td>
+                    <td>
+                        @item.Cups
+                    </td>
+                    <td>
+                        @item.Rating
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -91,3 +91,5 @@ C:\Users\spac-50\Desktop\Projekter\CerealAPI\DATABASE\ParseFromCSV\bin\Debug\tr\
 C:\Users\spac-50\Desktop\Projekter\CerealAPI\DATABASE\ParseFromCSV\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\spac-50\Desktop\Projekter\CerealAPI\DATABASE\ParseFromCSV\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\spac-50\Desktop\Projekter\CerealAPI\DATABASE\ParseFromCSV\obj\Debug\ParseFro.5257577A.Up2Date
+C:\Users\spac-50\Desktop\Projekter\CerealAPI\DATABASE\ParseFromCSV\bin\Debug\CerealDatabase.mdf
+C:\Users\spac-50\Desktop\Projekter\CerealAPI\DATABASE\ParseFromCSV\bin\Debug\CerealDatabase_log.ldf
